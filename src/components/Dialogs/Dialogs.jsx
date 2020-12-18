@@ -2,16 +2,24 @@ import React from 'react';
 import classes from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
+import {sendMessageActionCreator, updateMessageBodyActionCreator} from "../../redux/dialogsReducer";
 
-let newMessage = React.createRef();
-let addMessage = () => {
-    let text = newMessage.current.value;
-    alert(text);
-}
 const Dialogs = (props) => {
 
-    let dialogsElements = props.state.dialogs.map(v => <DialogItem name={v.name} id={v.id}/>);
-    let messagesElements = props.state.messages.map(v => <Message message={v.message}/>);
+    let state = props.store.getState().dialogsPage;
+
+    let dialogsElements = state.dialogs.map(v => <DialogItem name={v.name} id={v.id}/>);
+    let messagesElements = state.messages.map(v => <Message message={v.message}/>);
+    let newMessageBody = state.newMessageBody;
+
+    let onSendMessageClick = () => {
+        props.store.dispatch(sendMessageActionCreator());
+    }
+    let onNewMessageChange = (e) => {
+        let body = e.target.value;
+        props.store.dispatch(updateMessageBodyActionCreator(body));
+    }
+
 
     return (
         <div className={classes.dialogs}>
@@ -19,11 +27,15 @@ const Dialogs = (props) => {
                 {dialogsElements}
             </div>
             <div className={classes.messages}>
-                {messagesElements}
-            </div>
-            <div>
-                <textarea ref={newMessage}></textarea>
-                <button onClick={addMessage}>Add message</button>
+                <div>{messagesElements}</div>
+                <div>
+                    <div><textarea value={newMessageBody}
+                                   onChange={onNewMessageChange}
+                                   placeholder='Enter your message'></textarea></div>
+                    <div>
+                        <button onClick={onSendMessageClick}>Send</button>
+                    </div>
+                </div>
             </div>
         </div>
     )

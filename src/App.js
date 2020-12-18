@@ -9,11 +9,9 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Setings";
-import {updateNewPostText} from "./redux/state";
 
 const App = (props) => {
     return (
-        <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
@@ -22,13 +20,12 @@ const App = (props) => {
                            render={() => <Profile profilePage={props.state.profilePage}
                                                   dispatch={props.dispatch}/>}/>
                     <Route path='/dialogs'
-                           render={() => <Dialogs state={props.state.dialogsPage}/>}/>
+                           render={() => <Dialogs store={props.store}/>}/>
                     <Route path='/news' component={News}/>
                     <Route path='/musics' component={Music}/>
                     <Route path='/settings' component={Settings}/>
                 </div>
             </div>
-        </BrowserRouter>
     );
 }
 export default App;

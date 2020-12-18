@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sidebarReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,19 +54,19 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react-kam\Social-network\src\redux" />
+      <recent name="D:\react-kam\Social-network\src" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Dialogs\Message" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Dialogs\DialogItem" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\ProfileInfo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts" />
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts\Post" />
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile" />
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Navbar" />
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\react-kam\Social-network\src" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Dialogs\Message" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Dialogs\DialogItem" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\ProfileInfo" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts\Post" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,6 +102,8 @@
       <workItem from="1608108357597" duration="8854000" />
       <workItem from="1608121801404" duration="11328000" />
       <workItem from="1608204124364" duration="8479000" />
+      <workItem from="1608281168712" duration="5871000" />
+      <workItem from="1608287163739" duration="2021000" />
     </task>
     <servers />
   </component>
@@ -115,22 +123,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608062240074" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1608205415310">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1608289566178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608205415310" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1608205415310">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608289566178" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1608289566177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608205415310" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1608205415309">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608289566177" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1608289566177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608205415309" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1608205415310">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608289566177" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1608289566177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608205415310" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608289566177" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1608062302874">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
