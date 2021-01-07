@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1609358348109" duration="985000" />
       <workItem from="1609745452555" duration="28271000" />
       <workItem from="1609831143329" duration="10678000" />
-      <workItem from="1610011873202" duration="17345000" />
+      <workItem from="1610011873202" duration="20863000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610032822116</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="thunk Header&amp;Profile">
+      <created>1610037959148</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610037959148</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -166,17 +174,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <MESSAGE value="thunk Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="thunk Users" />
+    <MESSAGE value="thunk Header&amp;Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="thunk Header&amp;Profile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609784442329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610032821072">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610037958486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610032821072" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610037958486" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1609358364248">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -201,10 +210,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608062302874" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610032824328">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610037964734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610032824328" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610037964734" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -213,9 +222,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608126505899" />
-    <state x="339" y="17" width="672" height="678" key="search.everywhere.popup" timestamp="1608238352747">
+    <state x="339" y="17" width="672" height="678" key="search.everywhere.popup" timestamp="1610038123061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="17" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1608238352747" />
+    <state x="339" y="17" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610038123061" />
   </component>
 </project>
