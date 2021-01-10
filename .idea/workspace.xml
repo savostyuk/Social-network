@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +121,7 @@
       <workItem from="1609745452555" duration="28271000" />
       <workItem from="1609831143329" duration="10678000" />
       <workItem from="1610011873202" duration="23804000" />
-      <workItem from="1610281549757" duration="2685000" />
+      <workItem from="1610281549757" duration="10852000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -176,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610051362258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="setState, local state">
+      <created>1610284816857</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610284816857</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -189,17 +199,18 @@
     <MESSAGE value="thunk Header&amp;Profile" />
     <MESSAGE value="redirect" />
     <MESSAGE value="HOC redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="HOC redirect" />
+    <MESSAGE value="setState, local state" />
+    <option name="LAST_COMMIT_MESSAGE" value="setState, local state" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609784442329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610051361570">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610284815954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610051361570" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610284815954" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1609358364248">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
