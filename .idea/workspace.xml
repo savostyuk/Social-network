@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/appReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -130,7 +126,7 @@
       <workItem from="1610011873202" duration="23804000" />
       <workItem from="1610281549757" duration="18732000" />
       <workItem from="1610366794614" duration="8155000" />
-      <workItem from="1610435444858" duration="5171000" />
+      <workItem from="1610435444858" duration="12284000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -230,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610393054728</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="initialize">
+      <created>1610442001682</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610442001682</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -252,7 +255,8 @@
     <MESSAGE value="validate" />
     <MESSAGE value="form control" />
     <MESSAGE value="login logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="login logout" />
+    <MESSAGE value="initialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -263,38 +267,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610393053769">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610442000669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393053769" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610442000669" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1609358364248">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609358364248" />
-    <state width="1345" height="62" key="GridCell.Tab.0.bottom" timestamp="1610393091697">
+    <state width="1345" height="115" key="GridCell.Tab.0.bottom" timestamp="1610453211295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="62" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393091697" />
-    <state width="1345" height="62" key="GridCell.Tab.0.center" timestamp="1610393091697">
+    <state width="1345" height="115" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610453211295" />
+    <state width="1345" height="115" key="GridCell.Tab.0.center" timestamp="1610453211295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="62" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393091697" />
-    <state width="1345" height="62" key="GridCell.Tab.0.left" timestamp="1610393091697">
+    <state width="1345" height="115" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610453211295" />
+    <state width="1345" height="115" key="GridCell.Tab.0.left" timestamp="1610453211294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="62" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393091697" />
-    <state width="1345" height="62" key="GridCell.Tab.0.right" timestamp="1610393091697">
+    <state width="1345" height="115" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610453211294" />
+    <state width="1345" height="115" key="GridCell.Tab.0.right" timestamp="1610453211295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="62" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393091697" />
+    <state width="1345" height="115" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610453211295" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1610383932143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610383932143" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610393061092">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610442004130">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610393061092" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610442004130" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
