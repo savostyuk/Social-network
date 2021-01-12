@@ -8,7 +8,6 @@ import {
 } from "../../redux/usersReducer";
 import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
-import {usersAPI} from "../../api/api";
 import {WithAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
@@ -59,6 +58,5 @@ export default compose(
         setCurrentPage,
         toggleFollowingProgress,
         getUsers,
-    }),
-    WithAuthRedirect
+    })
 )(UsersContainer);
