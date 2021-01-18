@@ -25,11 +25,12 @@
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/English words.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +74,6 @@
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts\Post" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile" />
-      <recent name="D:\react-kam\01-first-project\my-app\src\components\Navbar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
       <recent name="D:\react-kam\Social-network\src\components\Profile\ProfileInfo" />
@@ -87,8 +81,15 @@
       <recent name="D:\react-kam\Social-network\src\redux" />
       <recent name="D:\react-kam\Social-network\src\components\Header" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts\Post" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile" />
+      <recent name="D:\react-kam\01-first-project\my-app\src\components\Navbar" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="ProfileStatus component.callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -194,7 +195,7 @@
       <workItem from="1610819572053" duration="842000" />
       <workItem from="1610820504571" duration="453000" />
       <workItem from="1610821336557" duration="2631000" />
-      <workItem from="1610973490645" duration="3944000" />
+      <workItem from="1610973490645" duration="7106000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -364,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610610362903</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="github pages">
+      <created>1610998472240</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610998472240</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -408,7 +416,8 @@
     <MESSAGE value="redux devTools + test rerender" />
     <MESSAGE value="paginator" />
     <MESSAGE value="lazy&amp;suspense" />
-    <option name="LAST_COMMIT_MESSAGE" value="lazy&amp;suspense" />
+    <MESSAGE value="github pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="github pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -423,10 +432,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610610362019">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610998470633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610610362019" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998470633" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1610973512872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -500,10 +509,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610383932143" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610610364797">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610998474178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610610364797" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998474178" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
