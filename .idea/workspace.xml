@@ -23,10 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withSuspense.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/English words.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/common/Paginator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Angular/ng-basics" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -85,35 +88,7 @@
       <recent name="D:\react-kam\Social-network\src\components\Header" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.ProfileStatus component.callback should be called">
-    <configuration name="ProfileStatus component.after creation &lt;input&gt; shouldn't be displayed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" />
-      <test-names>
-        <test-name value="ProfileStatus component" />
-        <test-name value="after creation &lt;input&gt; shouldn't be displayed" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProfileStatus component.after creation &lt;span&gt; should be correct status " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" />
-      <test-names>
-        <test-name value="ProfileStatus component" />
-        <test-name value="after creation &lt;span&gt; should be correct status " />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="ProfileStatus component.callback should be called" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -128,18 +103,37 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="ProfileStatus component.input should be displayed in editMode instead of span" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="render without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
       <test-names>
-        <test-name value="ProfileStatus component" />
-        <test-name value="input should be displayed in editMode instead of span" />
+        <test-name value="render without crashing" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -154,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="Jest.render without crashing" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Jest.ProfileStatus component.callback should be called" />
-        <item itemvalue="Jest.ProfileStatus component.input should be displayed in editMode instead of span" />
-        <item itemvalue="Jest.ProfileStatus component.after creation &lt;span&gt; should be correct status " />
-        <item itemvalue="Jest.ProfileStatus component.after creation &lt;input&gt; shouldn't be displayed" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +187,14 @@
       <workItem from="1610435444858" duration="17775000" />
       <workItem from="1610525841669" duration="13330000" />
       <workItem from="1610568714359" duration="4477000" />
-      <workItem from="1610605290512" duration="4889000" />
+      <workItem from="1610605290512" duration="5580000" />
+      <workItem from="1610627361008" duration="4275000" />
+      <workItem from="1610718393457" duration="1110000" />
+      <workItem from="1610735190045" duration="2359000" />
+      <workItem from="1610819572053" duration="842000" />
+      <workItem from="1610820504571" duration="453000" />
+      <workItem from="1610821336557" duration="2631000" />
+      <workItem from="1610973490645" duration="3944000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -356,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610608496626</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="lazy&amp;suspense">
+      <created>1610610362903</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610610362903</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -375,6 +383,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -398,7 +407,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="redux devTools + test rerender" />
     <MESSAGE value="paginator" />
-    <option name="LAST_COMMIT_MESSAGE" value="paginator" />
+    <MESSAGE value="lazy&amp;suspense" />
+    <option name="LAST_COMMIT_MESSAGE" value="lazy&amp;suspense" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -413,30 +423,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610608495367">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1610610362019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610608495367" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1609358364248">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610610362019" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1610973512872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609358364248" />
-    <state width="1345" height="71" key="GridCell.Tab.0.bottom" timestamp="1610605569197">
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610831152806" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610973512872" />
+    <state width="1345" height="41" key="GridCell.Tab.0.bottom" timestamp="1610998211311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="71" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610605569197" />
-    <state width="1345" height="71" key="GridCell.Tab.0.center" timestamp="1610605569197">
+    <state width="1345" height="41" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
+    <state width="1345" height="41" key="GridCell.Tab.0.center" timestamp="1610998211311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="71" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610605569197" />
-    <state width="1345" height="71" key="GridCell.Tab.0.left" timestamp="1610605569197">
+    <state width="1345" height="41" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
+    <state width="1345" height="41" key="GridCell.Tab.0.left" timestamp="1610998211310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="71" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610605569197" />
-    <state width="1345" height="71" key="GridCell.Tab.0.right" timestamp="1610605569197">
+    <state width="1345" height="41" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211310" />
+    <state width="1345" height="41" key="GridCell.Tab.0.right" timestamp="1610998211311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="71" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610605569197" />
+    <state width="1345" height="41" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
     <state width="1345" height="135" key="GridCell.Tab.1.bottom" timestamp="1610573241728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -489,10 +500,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610383932143" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610573219840">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610610364797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610573219840" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610610364797" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

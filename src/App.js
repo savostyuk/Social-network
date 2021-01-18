@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react';
-import {withRouter, Route, BrowserRouter} from 'react-router-dom';
+import {withRouter, Route, HashRouter, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import News from "./components/News/News";
@@ -61,10 +61,10 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 let SocialJSApp = (props) => {
-    return <BrowserRouter>
+    return <HashRouter>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 export default SocialJSApp;
