@@ -9,10 +9,10 @@ const SAVE_PHOTO_SUCCESS = 'SAVE_PHOTO_SUCCESS';
 
 let initialState = {
     posts: [
-        {id: 1, message: 'Hi! How are you?', likesCount: 11},
-        {id: 2, message: 'It\'s my new post', likesCount: 12},
-        {id: 3, message: 'BlaBla', likesCount: 5},
-        {id: 4, message: 'YoYo', likesCount: 22},
+        {id: 1, message: 'Это моя страница', likesCount: 12},
+        {id: 2, message: 'Первый тост за localhost', likesCount: 123},
+        {id: 3, message: 'Пост ни о чем', likesCount: 5},
+        {id: 4, message: 'Оно как бы работает но надо тестить', likesCount: 222},
     ],
     profile: null,
     status: '',
@@ -92,8 +92,8 @@ export const savePhoto = (file) => async (dispatch) => {
 };
 
 export const saveProfile = (profile) => async (dispatch, getState) => {
-    const userId = getState().auth.userId;
     let response = await profileAPI.saveProfile(profile);
+    const userId = getState().auth.userId;
     if (response.data.resultCode === 0) {//0 если ответ от сервера успешно
         dispatch(getUserProfile(userId));
     } else {

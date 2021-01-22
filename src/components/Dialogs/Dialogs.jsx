@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Dialogs.module.css';
+import styles from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
@@ -22,12 +22,12 @@ const Dialogs = (props) => {
     if (props.isAuth === false) return <Redirect to={"/login"}/>;
 
     return (
-        <div className={classes.dialogs}>
-            <div className={classes.dialogsItems}>
+        <div className={styles.dialogs}>
+            <div className={styles.dialogsItems}>
                 {dialogsElements}
             </div>
-            <div className={classes.messages}>
-                <div>{messagesElements}</div>
+            <div className={styles.messages}>
+                <div className={styles.message}>{messagesElements}</div>
                 <AddMessageFormRedux onSubmit={addNewMessage}/>
             </div>
         </div>
@@ -41,12 +41,12 @@ const AddMessageForm = (props) => {
             <div>
                 <Field component={Textarea}
                        name={"newMessageBody"}
-                       placeholder="Enter your message"
+                       placeholder="Введите сообщение"
                        validate={[required, maxLength50]}>
                 </Field>
             </div>
             <div>
-                <button>Send</button>
+                <button className={styles.sendMessage}>Send</button>
             </div>
         </form>
     )

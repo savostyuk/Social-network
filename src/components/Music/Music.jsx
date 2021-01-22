@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Music.module.css'
+import styles from './Music.module.css'
 
 const Music = () =>{
     return (
-        <div className={classes.content}>
-            Music
+        <div className={styles.content}>
+            Страница находится в разработке
         </div>
     )
 

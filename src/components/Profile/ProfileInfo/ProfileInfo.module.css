@@ -3,7 +3,26 @@
 }
 .mainPhoto{
     max-width: 200px;
+    border-radius: 50%;
 }
 .contact{
     padding-left: 10px;
+}
+button {
+    background-color: #566A8F;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button:hover{
+    background-color: #006DA9;
+    cursor: pointer;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './FormsControl.module.css'
 import {Field} from "redux-form";
-import {required} from "../../../utils/validators/validators";
 
 const FormControl = ({input, meta: {touched, error}, children}) => {
     const hasError = touched && error;
@@ -18,7 +17,7 @@ const FormControl = ({input, meta: {touched, error}, children}) => {
 export const Textarea = (props) => {
     const {input, meta, child, ...restProps} = props;
     return <FormControl {...props}>
-        <textarea {...input} {...restProps}/>
+        <textarea className={styles.textarea} {...input} {...restProps}/>
     </FormControl>
 }
 

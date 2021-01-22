@@ -20,8 +20,11 @@ const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileCo
 
 class App extends React.Component {
     catchAllUnhandleErrors = (promiseRejectionEvent) => {
-        alert("some error");
+       /* alert("some error");*/
         console.error(promiseRejectionEvent);
+    }
+    componentWillMount() {
+        document.title = 'Социальная сеть';
     }
 
     componentDidMount() {   //срабатывает 1 раз, когда компонента монтируется

@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './News.module.css'
+import styles from './News.module.css'
 
 const News = () =>{
     return (
-        <div className={classes.content}>
-            News
+        <div className={styles.content}>
+            Страница находится в разработке
         </div>
     )
 }

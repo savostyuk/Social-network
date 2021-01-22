@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styles from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
-import ProfileStatus from "./ProfileStatus"
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import userPhoto from "../../../assets/images/user.png";
 import ProfileDataForm from "./ProfileDataForm";
@@ -43,24 +42,24 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
 }
 const ProfileData = ({profile, isOwner, goToEditMode}) => {
     return <div>
-        {isOwner && <div><button onClick={goToEditMode}>Edit</button></div>}
+        {isOwner && <div><button onClick={goToEditMode}>Редактировать</button></div>}
         <div>
-            <strong>Full name</strong> {profile.fullName}
+            <strong>ФИО: </strong> {profile.fullName}
         </div>
         <div>
-            <strong>Looking for a job:</strong> {profile.lookingForAJob ? "yes" : "no"}
+            <strong>Ищу работу: </strong> {profile.lookingForAJob ? "да" : "нет"}
         </div>
         {profile.lookingForAJob &&
         <div>
-            <strong>My professional skills</strong> {profile.lookingForAJobDescription}
+            <strong>Мои профессиональные навыки: </strong> {profile.lookingForAJobDescription}
         </div>
         }
 
         <div>
-            <strong>About me:</strong> {profile.aboutMe}
+            <strong>Обо мне: </strong> {profile.aboutMe}
         </div>
         <div>
-            <strong>Contacts:</strong> {Object.keys(profile.contacts).map(key => {
+            <strong>Контакты: </strong> {Object.keys(profile.contacts).map(key => {
             return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
         })}
         </div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Settings.module.css'
+import styles from './Settings.module.css'
 
 const Settings = () =>{
     return (
-        <div className={classes.content}>
-            Settings
+        <div className={styles.content}>
+            Страница находится в разработке
         </div>
     )
 }

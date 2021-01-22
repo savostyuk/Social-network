@@ -1,4 +1,52 @@
-.usersPhoto{
-    width: 100px;
-    height: 100px;
+.userWrapper {
+    display: flex;
+    flex-direction: row;
 }
+.usersPhoto {
+    width: 90px;
+    height: 90px;
+}
+.users {
+    margin: 10px;
+}
+
+.usersInfo {
+    margin: 10px;
+}
+.username, .status{
+    padding-bottom: 5px;
+}
+
+.usersButtonRed {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.usersButtonRed:active, .usersButtonRed:focus, .usersButtonGreen:active, .usersButtonGreen:focus {
+    outline: none;
+}
+
+.usersButtonRed:hover {
+    background-color: #9f0404;
+    cursor: pointer;
+}
+.usersButtonGreen:hover {
+    background-color: #034803;
+    cursor: pointer;
+}
+
+.usersButtonGreen {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+

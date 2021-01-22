@@ -1,13 +1,30 @@
-.header{
+.header {
     grid-area: h;
-    background-color: green;
+    background: url(../../assets/images/logo.svg) 1% center no-repeat, #0082CA;
 }
-.header img{
-    width: 50px;
-}
-.loginBlock{
+
+.loginBlock {
     float: right;
+    margin: 15px 10px;
 }
-.loginBlock a{
+.loginBlock div{
+    font-weight: bold;
     color: white;
+}
+
+.headerButton {
+    background-color: #f3f3f3;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 75px;
+    height: 30px;
+}
+.headerButton:active,.headerButton:focus{
+    outline: none;
+}
+.headerButton:hover{
+    background-color: #ffffff;
+    cursor: pointer;
 }

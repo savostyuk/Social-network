@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./Paginator.module.css";
 import cn from 'classnames';
+import {NavLink} from "react-router-dom";
 
 let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portionSize = 10}) => {
     let pagesCount = Math.ceil(totalItemsCount / pageSize);
@@ -17,9 +18,9 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
     return <div className={cn(styles.paginator, {[styles.selectedPage] : true})}>
         {
             portionNumber > 1 &&
-            <button onClick={() => {
+            <button className={styles.button + ' ' +styles.buttonLeft} onClick={() => {
                 setPortionNumber(portionNumber - 1)
-            }}>PREV</button>
+            }}>Влево</button>
         }
         {pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
@@ -34,7 +35,7 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
                 }
             )}
         {portionCount>portionNumber &&
-        <button onClick={()=>{setPortionNumber(portionNumber+1)} }>NEXT</button>}
+        <button className={styles.button + ' ' +styles.buttonRight} onClick={()=>{setPortionNumber(portionNumber+1)} }>Вправо</button>}
     </div>
 
 }

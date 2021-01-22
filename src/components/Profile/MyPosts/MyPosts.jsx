@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './MyPosts.module.css';
+import styles from './MyPosts.module.css';
 import Post from "./Post/Post";
 import {Field, reduxForm} from "redux-form";
 import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {Textarea} from "../../common/FormControls/FormsControl";
 
-const maxLength10 = maxLengthCreator(10);
+const maxLength100 = maxLengthCreator(100);
 
 const MyPosts = React.memo((props) => {
 
@@ -17,10 +17,10 @@ const MyPosts = React.memo((props) => {
 
 
     return (
-        <div className={classes.postsBlock}>
-            <h3>My posts</h3>
+        <div className={styles.postsBlock}>
+            <h3>Моя стена</h3>
             <AddPostFormRedux onSubmit={onAddPost}/>
-            <div className={classes.posts}>
+            <div className={styles.posts}>
                 {postsElements}
             </div>
         </div>
@@ -31,10 +31,11 @@ const AddNewPostForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field component={Textarea} name={"newPostText"} placeholder="Post message" validate={[required, maxLength10]}/>
+                <Field component={Textarea} name={"newPostText"} placeholder="Новый пост"
+                       validate={[required, maxLength100]}/>
             </div>
             <div>
-                <button>Add post</button>
+                <button className={styles.button}>Добавить пост</button>
             </div>
         </form>
     )
