@@ -22,25 +22,25 @@ const usersReducer = (state = initialState, action) => {
         case FOLLOW:
             return {
                 ...state,
-                users: updateObjectInArray(state.users, action.userId, "id", {followed:true}),
-/*                users: state.users.map(u => {
-                    if (u.id === action.userId) {
-                        return {...u, followed: true};
-                    }
-                    return u;
-                })*/
+                users: updateObjectInArray(state.users, action.userId, "id", {followed: true}),
+                /*                users: state.users.map(u => {
+                                    if (u.id === action.userId) {
+                                        return {...u, followed: true};
+                                    }
+                                    return u;
+                                })*/
             }
         case UNFOLLOW:
             return {
                 ...state,
-                users: updateObjectInArray(state.users, action.userId, "id", {followed:false}),
+                users: updateObjectInArray(state.users, action.userId, "id", {followed: false}),
 
-/*                users: state.users.map(u => {
-                    if (u.id === action.userId) {
-                        return {...u, followed: false};
-                    }
-                    return u;
-                })*/
+                /*                users: state.users.map(u => {
+                                    if (u.id === action.userId) {
+                                        return {...u, followed: false};
+                                    }
+                                    return u;
+                                })*/
             }
         case SET_USERS:
             return {...state, users: action.users}
@@ -85,7 +85,7 @@ export const requestUsers = (page, pageSize) => {
         dispatch(setTotalUsersCount(data.totalCount));
     }
 }
-const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) =>{
+const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
     dispatch(toggleFollowingProgress(true, userId));
     let response = await apiMethod(userId);
     if (response.data.resultCode === 0) {

@@ -1,13 +1,11 @@
-import React, {Suspense} from 'react';
-import {withRouter, Route, HashRouter, BrowserRouter} from 'react-router-dom';
+import React from 'react';
+import {Redirect, Switch, withRouter, Route, HashRouter} from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Setings";
-//import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
-//import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
@@ -17,13 +15,22 @@ import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/reduxStore";
 import {withSuspense} from "./hoc/withSuspense";
 
-const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
+const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer')); //не собирает сразу большой бандл
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends React.Component {
+    catchAllUnhandleErrors = (promiseRejectionEvent) => {
+        alert("some error");
+        console.error(promiseRejectionEvent);
+    }
 
-    componentDidMount() {
-        this.props.initializeApp();
+    componentDidMount() {   //срабатывает 1 раз, когда компонента монтируется
+        this.props.initializeApp(); //callback
+        window.addEventListener("unhandledrejection", this.catchAllUnhandleErrors)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("unhandledrejection", this.catchAllUnhandleErrors)
     }
 
     render() {
@@ -35,17 +42,23 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
-                    <Route path='/profile/:userId?'
-                           render={ withSuspense(ProfileContainer)}/>
-                    <Route path='/dialogs'
-                           render={ withSuspense(DialogsContainer)}/>
-                    <Route path='/users'
-                           render={() => <UsersContainer/>}/>
-                    <Route path='/login'
-                           render={() => <LoginPage/>}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/musics' component={Music}/>
-                    <Route path='/settings' component={Settings}/>
+                    <Switch>
+                        <Route exact path='/'
+                               render={() => <Redirect to={"/profile"}/>}/>
+                        <Route path='/profile/:userId?'
+                               render={withSuspense(ProfileContainer)}/>
+                        <Route path='/dialogs'
+                               render={withSuspense(DialogsContainer)}/>
+                        <Route path='/users'
+                               render={() => <UsersContainer/>}/>
+                        <Route path='/login'
+                               render={() => <LoginPage/>}/>
+                        <Route exact path='/news' component={News}/>
+                        <Route exact path='/musics' component={Music}/>
+                        <Route exact path='/settings' component={Settings}/>
+                        <Route exact path='*'
+                               render={() => <div>404 NOT FOUND</div>}/>
+                    </Switch>
                 </div>
             </div>
         );
@@ -58,9 +71,9 @@ const mapStateToProps = (state) => ({
 
 let AppContainer = compose(
     withRouter,
-    connect(mapStateToProps, {initializeApp}))(App);
+    connect(mapStateToProps, {initializeApp}))(App);  //compose применяет HOC
 
-let SocialJSApp = (props) => {
+let SocialJSApp = (props) => { //Hash - для работы на GitHub
     return <HashRouter>
         <Provider store={store}>
             <AppContainer/>

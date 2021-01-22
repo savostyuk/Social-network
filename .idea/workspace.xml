@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/appReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Angular/ng-basics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -193,7 +198,11 @@
       <workItem from="1610820504571" duration="453000" />
       <workItem from="1610821336557" duration="2631000" />
       <workItem from="1610973490645" duration="11209000" />
-      <workItem from="1611035980746" duration="9252000" />
+      <workItem from="1611035980746" duration="17474000" />
+      <workItem from="1611126784517" duration="3089000" />
+      <workItem from="1611210315711" duration="11000" />
+      <workItem from="1611300900545" duration="461000" />
+      <workItem from="1611334312134" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -384,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611039337534</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="captcha">
+      <created>1611084387218</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611084387218</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -431,7 +447,8 @@
     <MESSAGE value="github pages" />
     <MESSAGE value="+image" />
     <MESSAGE value="update profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="update profile" />
+    <MESSAGE value="captcha" />
+    <option name="LAST_COMMIT_MESSAGE" value="captcha" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -446,31 +463,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611039336321">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611084386235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611039336321" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611079793405">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611084386235" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611132651386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611079793405" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611132651386" />
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610973512872" />
-    <state width="1345" height="41" key="GridCell.Tab.0.bottom" timestamp="1610998211311">
+    <state width="1345" height="247" key="GridCell.Tab.0.bottom" timestamp="1611301362092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="41" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
-    <state width="1345" height="41" key="GridCell.Tab.0.center" timestamp="1610998211311">
+    <state width="1345" height="247" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611301362092" />
+    <state width="1345" height="247" key="GridCell.Tab.0.center" timestamp="1611301362092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="41" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
-    <state width="1345" height="41" key="GridCell.Tab.0.left" timestamp="1610998211310">
+    <state width="1345" height="247" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611301362092" />
+    <state width="1345" height="247" key="GridCell.Tab.0.left" timestamp="1611301362092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="41" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211310" />
-    <state width="1345" height="41" key="GridCell.Tab.0.right" timestamp="1610998211311">
+    <state width="1345" height="247" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611301362092" />
+    <state width="1345" height="247" key="GridCell.Tab.0.right" timestamp="1611301362092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="41" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610998211311" />
+    <state width="1345" height="247" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611301362092" />
     <state width="1345" height="135" key="GridCell.Tab.1.bottom" timestamp="1610573241728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -523,10 +540,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610383932143" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611039342394">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611084389525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611039342394" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611084389525" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
