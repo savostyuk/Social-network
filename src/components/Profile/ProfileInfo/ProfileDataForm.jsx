@@ -36,7 +36,7 @@ const ProfileDataForm = ({handleSubmit, profile, error}) => {
         })}
         </div>
         <div>
-            <button>Сохранить</button>
+            <button className={s.buttonProfile}>Сохранить</button>
         </div>
     </form>
 }

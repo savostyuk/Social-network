@@ -25,22 +25,12 @@
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/appReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +200,7 @@
       <workItem from="1611126784517" duration="3089000" />
       <workItem from="1611210315711" duration="11000" />
       <workItem from="1611300900545" duration="461000" />
-      <workItem from="1611334312134" duration="21174000" />
+      <workItem from="1611334312134" duration="23106000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -422,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611354813989</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="rename Action Creator and Thunk Creator, change styles">
+      <created>1611356053103</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611356053103</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -445,7 +442,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="thunk Header&amp;Profile" />
     <MESSAGE value="redirect" />
     <MESSAGE value="HOC redirect" />
     <MESSAGE value="setState, local state" />
@@ -470,7 +466,8 @@
     <MESSAGE value="captcha" />
     <MESSAGE value="router switch" />
     <MESSAGE value="add styles+refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="add styles+refactoring" />
+    <MESSAGE value="rename Action Creator and Thunk Creator, change styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename Action Creator and Thunk Creator, change styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -485,31 +482,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611354813029">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611356052398">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611354813029" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611356052398" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611132651386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611132651386" />
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610973512872" />
-    <state width="1345" height="83" key="GridCell.Tab.0.bottom" timestamp="1611355436449">
+    <state width="1345" height="83" key="GridCell.Tab.0.bottom" timestamp="1611356062578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611355436449" />
-    <state width="1345" height="83" key="GridCell.Tab.0.center" timestamp="1611355436449">
+    <state width="1345" height="83" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611356062578" />
+    <state width="1345" height="83" key="GridCell.Tab.0.center" timestamp="1611356062578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611355436449" />
-    <state width="1345" height="83" key="GridCell.Tab.0.left" timestamp="1611355436449">
+    <state width="1345" height="83" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611356062578" />
+    <state width="1345" height="83" key="GridCell.Tab.0.left" timestamp="1611356062578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611355436449" />
-    <state width="1345" height="83" key="GridCell.Tab.0.right" timestamp="1611355436449">
+    <state width="1345" height="83" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611356062578" />
+    <state width="1345" height="83" key="GridCell.Tab.0.right" timestamp="1611356062578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611355436449" />
+    <state width="1345" height="83" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611356062578" />
     <state width="1345" height="135" key="GridCell.Tab.1.bottom" timestamp="1610573241728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

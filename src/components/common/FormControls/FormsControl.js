@@ -29,7 +29,7 @@ export const Input = (props) => {
 }
 
 export const createField = (placeholder, name, validators, component, props = {}, text = "") => (
-    <div>
+    <div className={styles.formCheckbox}>
         <Field placeholder={placeholder}
                name={name}
                validate={validators}

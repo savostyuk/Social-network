@@ -14,8 +14,54 @@
 .textarea{
     width: 400px;
     border-radius: 3px;
-    border: 2px solid gray;
+    border: 1px solid gray;
 }
 .textarea:active, .textarea:focus{
     outline: none;
+}
+.formCheckbox{
+    display: flex;
+    flex-direction: row;
+}
+.buttonLogin {
+    background-color: #566A8F;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.buttonLogin:active, .buttonLogin:focus {
+    outline: none;
+}
+
+.buttonLogin:hover{
+    background-color: #006DA9;
+    cursor: pointer;
+}
+
+.loginForm{
+    margin-left: 25px;
+}
+.loginInput input{
+    height: 30px;
+    width: 180px;
+    margin-top: 5px;
+    background: #F9F9F9;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+}
+
+.loginForm input:active, .loginForm input:focus{
+    outline: none;
+}
+.loginTitle{
+    margin-left: 10px;
+    margin-bottom: 16px;
+    color: #333333;
+    margin-top: 20px;
+    font-size: 24px;
 }
