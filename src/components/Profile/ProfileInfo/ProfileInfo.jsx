@@ -31,18 +31,18 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
             <div className={styles.descriptionBlock}>
                 <img className={styles.mainPhoto} src={profile.photos.large || userPhoto}/>
                 {isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
+
+                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
                 {editMode ?
                     <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit}/>
                     : <ProfileData profile={profile} isOwner={isOwner} goToEditMode={()=>{setEditMode(true)}}/>
                 }
-                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
         </div>
     )
 }
 const ProfileData = ({profile, isOwner, goToEditMode}) => {
     return <div>
-        {isOwner && <div><button onClick={goToEditMode}>Редактировать</button></div>}
         <div>
             <strong>ФИО: </strong> {profile.fullName}
         </div>
@@ -63,6 +63,9 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
             return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
         })}
         </div>
+
+        {isOwner && <div><button className={styles.buttonProfile} onClick={goToEditMode}>Редактировать</button></div>}
+
     </div>
 }
 

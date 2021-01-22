@@ -6,9 +6,6 @@ import styles from '../../common/FormControls/FormsControl.module.css'
 
 const ProfileDataForm = ({handleSubmit, profile, error}) => {
     return <form onSubmit={handleSubmit}>
-        <div>
-            <button>Сохранить</button>
-        </div>
         {error && <div className={styles.formSummaryError}>
             {error}
         </div>}
@@ -37,6 +34,9 @@ const ProfileDataForm = ({handleSubmit, profile, error}) => {
             </div>
 
         })}
+        </div>
+        <div>
+            <button>Сохранить</button>
         </div>
     </form>
 }

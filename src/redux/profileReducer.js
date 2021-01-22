@@ -62,40 +62,40 @@ const profileReducer = (state = initialState, action) => {
 
 }
 
-export const addPostActionCreator = (newPostText) => ({type: ADD_POST, newPostText});
-export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
-export const setStatus = (status) => ({type: SET_STATUS, status});
-export const deletePost = (postId) => ({type: DELETE_POST, postId});
-export const savePhotoSuccess = (photos) => ({type: SAVE_PHOTO_SUCCESS, photos});
+export const addPostAC = (newPostText) => ({type: ADD_POST, newPostText});
+export const setUserProfileAC = (profile) => ({type: SET_USER_PROFILE, profile});
+export const setStatusAC = (status) => ({type: SET_STATUS, status});
+export const deletePostAC = (postId) => ({type: DELETE_POST, postId});
+export const savePhotoSuccessAC = (photos) => ({type: SAVE_PHOTO_SUCCESS, photos});
 
 
-export const getUserProfile = (userId) => async (dispatch) => {
+export const getUserProfileTC = (userId) => async (dispatch) => {
     let response = await usersAPI.getProfile(userId);
-    dispatch(setUserProfile(response.data));
+    dispatch(setUserProfileAC(response.data));
 };
 
-export const getStatus = (userId) => async (dispatch) => {
+export const getStatusTC = (userId) => async (dispatch) => {
     let response = await profileAPI.getStatus(userId);
-    dispatch(setStatus(response.data));
+    dispatch(setStatusAC(response.data));
 };
 
-export const updateStatus = (status) => async (dispatch) => {
+export const updateStatusTC = (status) => async (dispatch) => {
     let response = await profileAPI.updateStatus(status);
     if (response.data.resultCode === 0) //0 если ответ от сервера успешно
-        dispatch(setStatus(status));
+        dispatch(setStatusAC(status));
 };
 
-export const savePhoto = (file) => async (dispatch) => {
+export const savePhotoTC = (file) => async (dispatch) => {
     let response = await profileAPI.savePhoto(file);
     if (response.data.resultCode === 0) //0 если ответ от сервера успешно
-        dispatch(savePhotoSuccess(response.data.data.photos));
+        dispatch(savePhotoSuccessAC(response.data.data.photos));
 };
 
-export const saveProfile = (profile) => async (dispatch, getState) => {
+export const saveProfileTC = (profile) => async (dispatch, getState) => {
     let response = await profileAPI.saveProfile(profile);
     const userId = getState().auth.userId;
     if (response.data.resultCode === 0) {//0 если ответ от сервера успешно
-        dispatch(getUserProfile(userId));
+        dispatch(getUserProfileTC(userId));
     } else {
         dispatch(stopSubmit("edit-profile", {_error: response.data.messages[0]}));
         return Promise.reject(response.data.messages[0]);

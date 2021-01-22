@@ -10,7 +10,7 @@ import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
 import {compose} from "redux";
-import {initializeApp} from "./redux/appReducer";
+import {initializeAppTC} from "./redux/appReducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/reduxStore";
 import {withSuspense} from "./hoc/withSuspense";
@@ -74,7 +74,7 @@ const mapStateToProps = (state) => ({
 
 let AppContainer = compose(
     withRouter,
-    connect(mapStateToProps, {initializeApp}))(App);  //compose применяет HOC
+    connect(mapStateToProps, {initializeApp: initializeAppTC}))(App);  //compose применяет HOC
 
 let SocialJSApp = (props) => { //Hash - для работы на GitHub
     return <HashRouter>

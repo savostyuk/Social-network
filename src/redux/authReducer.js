@@ -25,47 +25,47 @@ const authReducer = (state = initialState, action) => {
 
 }
 
-export const setAuthUserData = (userId, email, login, isAuth) => ({
+export const setAuthUserDataAC = (userId, email, login, isAuth) => ({
     type: SET_USER_DATA,
     payload: {userId, email, login, isAuth}
 });
-export const getCaptchaUrlSuccess = (captchaUrl) => ({
+export const getCaptchaUrlSuccessAC = (captchaUrl) => ({
     type: GET_CAPTCHA_URL_SUCCESS, payload: {captchaUrl}
 });
 
-export const getAuthUserData = () => async (dispatch) => {
+export const getAuthUserDataTC = () => async (dispatch) => {
     let response = await authAPI.me();
     if (response.data.resultCode === 0) {
         let {id, email, login} = response.data.data;
-        dispatch(setAuthUserData(id, email, login, true));
+        dispatch(setAuthUserDataAC(id, email, login, true));
     }
 }
 
-export const login = (email, password, rememberMe, captcha) => async (dispatch) => {
+export const loginTC = (email, password, rememberMe, captcha) => async (dispatch) => {
     let response = await authAPI.login(email, password, rememberMe, captcha);
     if (response.data.resultCode === 0) {
         //success, get auth data
-        dispatch(getAuthUserData())
+        dispatch(getAuthUserDataTC())
     } else {
         if (response.data.resultCode === 10) {
-            dispatch(getCaptchaUrl());
+            dispatch(getCaptchaUrlTC());
         }
             let message = response.data.messages.length > 0 ? response.data.messages : "Some error";
         dispatch(stopSubmit("login", {_error: message}));
     }
 }
 
-export const getCaptchaUrl = () => async (dispatch) => {
+export const getCaptchaUrlTC = () => async (dispatch) => {
     const response = await securityAPI.getCaptchaUrl();
     const captchaUrl = response.data.url;
-    dispatch(getCaptchaUrlSuccess(captchaUrl));
+    dispatch(getCaptchaUrlSuccessAC(captchaUrl));
 
 }
 
-export const logout = () => async (dispatch) => {
+export const logoutTC = () => async (dispatch) => {
     let response = await authAPI.logout();
             if (response.data.resultCode === 0) {
-                dispatch(setAuthUserData(null, null, null, false));
+                dispatch(setAuthUserDataAC(null, null, null, false));
             }
 }
 
