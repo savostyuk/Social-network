@@ -1,11 +1,11 @@
-import profileReducer, {addPostAC, deletePostAC} from "./profileReducer";
+import profileReducer, {addPostAC, deletePostAC} from "../redux/profileReducer";
 let state = {
     posts: [
-        {id: 1, message: 'Hi! How are you?', likesCount: 11},
-        {id: 2, message: 'It\'s my new post', likesCount: 12},
-        {id: 3, message: 'BlaBla', likesCount: 5},
-        {id: 4, message: 'YoYo', likesCount: 22},
-    ]
+        {id: 1, message: 'Это моя страница', likesCount: 12},
+        {id: 2, message: 'Сегодня 23 января 2021 года', likesCount: 123},
+        {id: 3, message: 'Пост ни о чем', likesCount: 5},
+        {id: 4, message: 'Оно как бы работает но надо тестить', likesCount: 222},
+    ],
 }
 
 it('length of posts should be incremented', () =>{
@@ -38,15 +38,3 @@ it('after deleting length should be decrement', () =>{
     //3.expectation
     expect(newState.posts.length).toBe(3);
 })
-
-/*
-it(`after deleting length shouldn't be decrement if id is incorrect`, () =>{
-    //1.test data
-    let action = deletePost(1000);
-
-    //2.action
-    let newState = profileReducer(state,action);
-
-    //3.expectation
-    expect(newState.posts.length).toBe(3);
-})*/

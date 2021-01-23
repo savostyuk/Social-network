@@ -1,7 +1,7 @@
 import {authAPI, profileAPI, usersAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 
-const ADD_POST = 'ADD-POST';
+const ADD_POST = 'ADD_POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
 const SET_STATUS = 'SET_STATUS';
 const DELETE_POST = 'DELETE_POST';
@@ -10,7 +10,7 @@ const SAVE_PHOTO_SUCCESS = 'SAVE_PHOTO_SUCCESS';
 let initialState = {
     posts: [
         {id: 1, message: 'Это моя страница', likesCount: 12},
-        {id: 2, message: 'Первый тост за localhost', likesCount: 123},
+        {id: 2, message: 'Сегодня 23 января 2021 года', likesCount: 123},
         {id: 3, message: 'Пост ни о чем', likesCount: 5},
         {id: 4, message: 'Оно как бы работает но надо тестить', likesCount: 222},
     ],

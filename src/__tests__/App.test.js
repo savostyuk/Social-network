@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SocialJSApp from "./App";
+import SocialJSApp from "../App";
 
 it('render without crashing', () => {
 const div = document.createElement('div');
