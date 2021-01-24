@@ -18,7 +18,7 @@ import {
     getTotalUsersCount, getUsers
 } from "../../redux/users-selectors";
 
-class UsersContainer extends React.Component {
+class UsersContainer extends React.PureComponent {
 
     componentDidMount() {
         const {currentPage, pageSize} = this.props;

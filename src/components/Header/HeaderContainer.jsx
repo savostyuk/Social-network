@@ -4,7 +4,7 @@ import Header from "./Header";
 import {logoutTC} from "../../redux/authReducer";
 
 
-class HeaderContainer extends React.Component {
+class HeaderContainer extends React.PureComponent {
 
 
     render() {

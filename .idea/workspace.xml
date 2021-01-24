@@ -25,11 +25,17 @@
     <list default="true" id="78f485cf-600a-4f8d-8be6-5e7a5841d337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/ProfileStatus.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/profileReducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormControls/FormsControl.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +79,6 @@
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\react-kam\Social-network\build" />
-      <recent name="D:\react-kam\Social-network\public" />
-      <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
-      <recent name="D:\react-kam\Social-network\src\components\Profile\ProfileInfo" />
-      <recent name="D:\react-kam\Social-network\src\components\Users" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\react-kam\Social-network\src\__tests__" />
       <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
@@ -87,8 +86,56 @@
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile\MyPosts\Post" />
       <recent name="D:\react-kam\01-first-project\my-app\src\components\Profile" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react-kam\Social-network\build" />
+      <recent name="D:\react-kam\Social-network\public" />
+      <recent name="D:\react-kam\Social-network\src\components\common\Paginator" />
+      <recent name="D:\react-kam\Social-network\src\components\Profile\ProfileInfo" />
+      <recent name="D:\react-kam\Social-network\src\components\Users" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="Paginator component test (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" />
+      <test-names>
+        <test-name value="Paginator component test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Paginator component test.if pages count is more then 10 button NEXT should be present" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" />
+      <test-names>
+        <test-name value="Paginator component test" />
+        <test-name value="if pages count is more then 10 button NEXT should be present" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Paginator component test.pages count is 11 but should be showed only 10" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/Paginator.test.jsx" />
+      <test-names>
+        <test-name value="Paginator component test" />
+        <test-name value="pages count is 11 but should be showed only 10" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="ProfileStatus component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -102,29 +149,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="length of posts should be incremented" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/profileReducer.test.js" />
-      <test-names>
-        <test-name value="length of posts should be incremented" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -135,23 +159,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="Jest.ProfileStatus component" />
-        <item itemvalue="Jest.length of posts should be incremented" />
         <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.build" />
+        <item itemvalue="Jest.Paginator component test.if pages count is more then 10 button NEXT should be present" />
+        <item itemvalue="Jest.Paginator component test.pages count is 11 but should be showed only 10" />
+        <item itemvalue="Jest.Paginator component test (1)" />
+        <item itemvalue="Jest.ProfileStatus component" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +213,8 @@
       <workItem from="1611210315711" duration="11000" />
       <workItem from="1611300900545" duration="461000" />
       <workItem from="1611334312134" duration="23453000" />
-      <workItem from="1611380213921" duration="4809000" />
+      <workItem from="1611380213921" duration="6705000" />
+      <workItem from="1611475388163" duration="6928000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1608291046819</created>
@@ -425,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611357992857</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update tests">
+      <created>1611385329008</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1611385329008</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -448,7 +470,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="HOC redirect" />
     <MESSAGE value="setState, local state" />
     <MESSAGE value="update Status" />
     <MESSAGE value="add Login" />
@@ -473,7 +494,8 @@
     <MESSAGE value="add styles+refactoring" />
     <MESSAGE value="rename Action Creator and Thunk Creator, change styles" />
     <MESSAGE value="change styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="change styles" />
+    <MESSAGE value="update tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="256" key="#ESLint" timestamp="1610391896595">
@@ -488,31 +510,35 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1609784442329" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611357992234">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611385327935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611357992234" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611380248593">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611385327935" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611478265893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611380248593" />
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610973512872" />
-    <state width="1345" height="83" key="GridCell.Tab.0.bottom" timestamp="1611384478500">
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611388831277" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611478265893" />
+    <state width="1345" height="223" key="GridCell.Tab.0.bottom" timestamp="1611480969341">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611384478500" />
-    <state width="1345" height="83" key="GridCell.Tab.0.center" timestamp="1611384478500">
+    <state width="1345" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611480969341" />
+    <state width="1345" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611478781344" />
+    <state width="1345" height="223" key="GridCell.Tab.0.center" timestamp="1611480969341">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611384478500" />
-    <state width="1345" height="83" key="GridCell.Tab.0.left" timestamp="1611384478500">
+    <state width="1345" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611480969341" />
+    <state width="1345" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611478781343" />
+    <state width="1345" height="223" key="GridCell.Tab.0.left" timestamp="1611480969341">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611384478500" />
-    <state width="1345" height="83" key="GridCell.Tab.0.right" timestamp="1611384478500">
+    <state width="1345" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611480969341" />
+    <state width="1345" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611478781343" />
+    <state width="1345" height="223" key="GridCell.Tab.0.right" timestamp="1611480969341">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="83" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611384478500" />
+    <state width="1345" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611480969341" />
+    <state width="1345" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611478781343" />
     <state width="1345" height="135" key="GridCell.Tab.1.bottom" timestamp="1610573241728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -565,10 +591,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1610383932143" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611358216701">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611385352932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611358216701" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-85.1920.1040@0.0.1366.728" timestamp="1611385352932" />
     <state x="362" y="0" width="1020" height="715" key="dock-window-1" timestamp="1608040361914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

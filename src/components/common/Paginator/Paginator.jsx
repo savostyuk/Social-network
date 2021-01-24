@@ -20,7 +20,8 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
             portionNumber > 1 &&
             <button className={styles.button + ' ' +styles.buttonLeft} onClick={() => {
                 setPortionNumber(portionNumber - 1)
-            }}>Влево</button>
+            }}>
+                &#10094;</button>
         }
         {pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
@@ -35,7 +36,8 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
                 }
             )}
         {portionCount>portionNumber &&
-        <button className={styles.button + ' ' +styles.buttonRight} onClick={()=>{setPortionNumber(portionNumber+1)} }>Вправо</button>}
+        <button className={styles.button + ' ' +styles.buttonRight} onClick={()=>{setPortionNumber(portionNumber+1)} }>
+            &#10095;</button>}
     </div>
 
 }
